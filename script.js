@@ -78,9 +78,6 @@ function atualizarContagem() {
   document.getElementById("barraInterna").style.width = percent + "%";
 }
 
-
-if (check.checked) {
-  item.style.opacity = "0.6";
-} else {
-  item.style.opacity = "1";
+function atualizarContagem() {
+  
 }
