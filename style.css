@@ -534,10 +534,28 @@
   }
 }
 
+/* PRIORIDADES */
+
+.baixa {
+  background: #e8f7ee;
+  border-color: #22c55e;
+}
+
+.media {
+  background: #fff4e5;
+  border-color: #f59e0b;
+}
+
+.alta {
+  background: #fde8e8;
+  border-color: #ef4444;
+}
+
 .footer {
   text-align: center;
   padding: 20px;
   color: #b0c0db;
+  margin-top: 6%;
 
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }

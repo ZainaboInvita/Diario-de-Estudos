@@ -4,98 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/lucide@latest"></script>
-<script>
-  lucide.createIcons();
-</script>
-    <title>Diario de estudos interativos.com</title>
+    <script>
+      lucide.createIcons();
+    </script>
+    <title>Diário de estudos interativos.com</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-     <img src="photo/livro.png" class="livro">
-    <h1 class="titulo">Diario de Estudos</h1>
-   
-  <section class="estatistica">
+    <img src="photo/livro.png" class="livro" />
+    <h1 class="titulo">Diário de Estudos</h1>
 
-  <div class="card">
-    <div class="topo">
-      <div class="icon azul">📊</div>
-      <h2 id="total">0</h2>
+    <section class="estatistica">
+      <div class="card">
+        <div class="topo">
+          <div class="icon azul">📊</div>
+          <h2 id="total">0</h2>
+        </div>
+        <p class="classificacao">Total</p>
+      </div>
+
+      <div class="card">
+        <div class="topo">
+          <div class="icon laranja">⏳</div>
+          <h2 id="pendentesCount">0</h2>
+        </div>
+        <p class="classificacao">Pendentes</p>
+      </div>
+
+      <div class="card">
+        <div class="topo">
+          <div class="icon verde">✅</div>
+          <h2 id="concluidasCount">0</h2>
+        </div>
+        <p class="classificacao">Concluídas</p>
+      </div>
+    </section>
+
+    <div class="progresso">
+      <p>Progresso do dia</p>
+      <div class="linha-progresso">
+        <div class="barra">
+          <div id="barraInterna"></div>
+        </div>
+        <span id="percentagem">0%</span>
+      </div>
     </div>
-    <p class="classificacao">Total</p>
-  </div>
 
-  <div class="card">
-    <div class="topo">
-      <div class="icon laranja">⏳</div>
-    <h2 id="pendentesCount">0</h2>
-    </div>
-    <p class="classificacao">Pendentes</p>
-  </div>
+    <section class="add-tarefa">
+      <h3 class="subtitulo">Nova Tarefa</h3>
 
-  <div class="card">
-    <div class="topo">
-      <div class="icon verde">✅</div>
-    <h2 id="concluidasCount">0</h2>
-    </div>
-    <p class="classificacao">Concluídas</p>
-  </div>
+      <div class="linha-tarefa">
+        <input
+          type="text"
+          id="texto"
+          placeholder="Adicionar nova tarefa de estudo..."
+        />
 
-</section>
+        <select id="prioridade">
+          <option value="baixa">🟢Baixa</option>
+          <option value="media" selected>🟡Média</option>
+          <option value="alta">🔴Alta</option>
+        </select>
 
-<div class="progresso">
-  <p>Progresso do dia</p>
-  <div class="linha-progresso">
-    <div class="barra">
-      <div id="barraInterna"></div>
-    </div>
-    <span id="percentagem">0%</span>
-  </div>
-</div>
+        <button onclick="adicionarTarefa()">+ Adicionar</button>
+      </div>
+    </section>
 
+    <section class="lista-tarefas">
+      <h3>Suas tarefas</h3>
 
+      <p id="pendentesTitulo">Pendentes (0)</p>
+      <ul id="pendentes"></ul>
 
-<section class="add-tarefa">
+      <p id="concluidasTitulo">Concluídas (0)</p>
+      <ul id="concluidas"></ul>
+    </section>
 
-  <h3 class="subtitulo">Nova Tarefa</h3>
+    <footer class="footer">
+      <p>© 2026 Diário de Estudos • Desenvolvido por Zainabo Invita 💙</p>
+    </footer>
 
-  <div class="linha-tarefa">
-
-    <input 
-      type="text" 
-      id="texto" 
-      placeholder="Adicionar nova tarefa de estudo..."
-    >
-
-  
-    <select id="prioridade">
-      <option value="baixa">🟢Baixa</option>
-      <option value="media" selected> 🟡Média</option>
-      <option value="alta"> 🔴Alta</option>
-    </select>
-
-    
-    <button onclick="adicionarTarefa()">+ Adicionar</button>
-
-  </div>
-
-</section>
-
-<section class="lista-tarefas">
-
-  <h3>Suas tarefas</h3>
-
-  <p id="pendentesTitulo">Pendentes (0)</p>
-  <ul id="pendentes"></ul>
-
-  <p id="concluidasTitulo">Concluídas (0)</p>
-  <ul id="concluidas"></ul>
-
-</section>
-
-<footer class="footer">
-  <p>© 2026 Diário de Estudos • Desenvolvido por Zainabo Invita 💙</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
