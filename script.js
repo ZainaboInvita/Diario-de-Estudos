@@ -78,6 +78,3 @@ function atualizarContagem() {
   document.getElementById("barraInterna").style.width = percent + "%";
 }
 
-function atualizarContagem() {
-  
-}
