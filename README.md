@@ -26,3 +26,12 @@ Sugestão visual:
 * Cada tarefa com borda colorida conforme prioridade
 * Tarefas concluídas riscadas ou esmaecidas
 * Layout responsivo para celular e desktop
+
+Tecnologias:
+
+- HTML
+- CSS
+- JavaScript
+
+🚀 Demo live
+🔗 https://github.com/ZainaboInvita/Diario-de-Estudos
