@@ -11,9 +11,6 @@ function adicionarTarefa() {
   let item = document.createElement("li");
   item.classList.add("item");
 
-
-
-// ⭐ ADICIONE ISTO
 item.classList.add(prioridade);
 
   // botão de check
@@ -35,7 +32,8 @@ item.classList.add(prioridade);
 
   listaPendentes.appendChild(item);
 
-  document.getElementById("texto").value = "";
+ document.getElementById("texto").value = "";
+ document.getElementById("texto").blur();
 
   atualizarContagem();
 
