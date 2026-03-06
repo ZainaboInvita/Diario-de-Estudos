@@ -12,11 +12,9 @@ function adicionarTarefa() {
   item.classList.add("item");
 
 
-
-// ⭐ ADICIONE ISTO
 item.classList.add(prioridade);
 
-  // botão de check
+  
   let check = document.createElement("input");
   check.type = "checkbox";
 
@@ -24,7 +22,7 @@ item.classList.add(prioridade);
   let span = document.createElement("span");
   span.textContent = texto + " (" + prioridade + ")";
 
-  // botão apagar
+  //  botao apagar
   let apagar = document.createElement("button");
   apagar.textContent = "🗑️";
   apagar.classList.add("apagar");
@@ -64,7 +62,7 @@ function atualizarContagem() {
   let concluidas = document.getElementById("concluidas").children.length;
   let total = pendentes + concluidas;
 
-  // atualizar números dos cards
+  // atualizar nrs dos cards
   document.getElementById("total").textContent = total;
   document.getElementById("pendentesCount").textContent = pendentes;
   document.getElementById("concluidasCount").textContent = concluidas;
@@ -74,7 +72,7 @@ function atualizarContagem() {
     "Pendentes (" + pendentes + ")";
 
   document.getElementById("concluidasTitulo").textContent =
-    "Concluídas (" + concluidas + ")";
+    "Concluidas (" + concluidas + ")";
 
   // progresso
   let percent = total === 0 ? 0 : Math.round((concluidas / total) * 100);
