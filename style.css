@@ -1,13 +1,5 @@
-*{
-  box-sizing: border-box;
-}
-
 .titulo {
   text-align: center;
-}
-
-body{
-  overflow-x: hidden;
 }
 
 .livro {
@@ -355,12 +347,6 @@ body{
 
   border: 2px solid #eee;
   transition: 0.2s;
-   flex-wrap: wrap;
-  width:100%;
-}
-
-.item span{
-  word-break: break-word;
 }
 
 .item:hover {
