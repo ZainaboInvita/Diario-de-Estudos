@@ -34,4 +34,4 @@ Tecnologias:
 - JavaScript
 
 🚀 Demo live
-🔗 https://github.com/ZainaboInvita/Diario-de-Estudos
+🔗https://zainaboinvita.github.io/Diario-de-Estudos/
